@@ -1,0 +1,59 @@
+article{padding:10px}
+strong{color:#d4e362}
+li{color:#d4e362}
+.box{background-color:#457d1c;width:fit-content}
+.container{padding:10px}
+.images{width:100%;height:100%;transition:.5s ease}
+.images:hover{position:relative;transform:translateY(-20px);transition:.5s ease}
+.images-container{display:grid;gap:10px;grid-template-columns:1fr;margin-top:10px;margin-bottom:10px}
+.logo{width:100px;display:flex;padding:10px}
+.drinks-container{display:grid;grid-template-columns:1fr;gap:15px;margin-top:10px;margin-bottom:10px;height:100%}
+.drink-info img{width:100%}
+.name-order{display:grid;grid-template-columns:1fr 1fr;padding:10px}
+.name-order h2{text-align:left}
+.name-order a h2{text-align:right}
+nav{display:grid;grid-template-columns:1fr 1fr;display:flex;align-items:center;justify-content:space-between;padding:10px}
+.navbar{display:flex;justify-content:flex-end;list-style:none;padding:0;margin:0;z-index:9999}
+.navbar>li{list-style:none;padding:10px}
+.navbar>li>a{text-decoration:none;color:#d4e362}
+.menu-toggle{display:none;background:0 0;border:none;cursor:pointer;font-size:24px;color:#d4e362}
+.popup{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;padding:20px;border:1px solid #ccc;z-index:9999}
+.popup h2{margin-top:0}
+.close{position:absolute;top:10px;right:10px;cursor:pointer}
+.header-img{text-align:center;background-image:url(../images/plant.png);background-repeat:no-repeat;background-position:center;background-size:cover;padding:100px;height:100px}
+footer{padding:10px}
+h1,h2,h3,h4{color:#d4e362}
+p{color:#d4e362}
+.box>p{color:#ffd457}
+body{background-color:#1a3804}
+footer{background-color:#457d1c}
+@media (max-width:768px){
+article{padding:5px}
+p{font-size:large}
+.navbar{display:none;position:fixed;top:0;right:0;width:50%;height:1000%;background-color:#8aba10;text-align:left;animation:slideDown .5s ease forwards;padding:10px;padding-left:20px}
+.navbar.show{display:flex;flex-direction:column}
+.navbar li{padding:20px 0;font-size:25px}
+.menu-toggle{display:block;position:fixed;z-index:99999;right:30px;top:30px}
+}
+@media (min-width:769px){
+.images-container{grid-template-columns:1fr 1fr}
+.image-container{position:relative;width:100%;padding-top:100%;overflow:hidden}
+.image-container img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+.header-img{height:300px}
+.drinks-container{grid-template-columns:1fr 1fr 1fr}
+}
+body{font-family:Courgette,cursive;font-weight:600;font-style:normal}
+@keyframes slideDown{
+0%{top:-500px;opacity:0}
+100%{top:0;opacity:1}
+}
+.logo{animation:slide-FLeft 1.5s forwards;position:relative}
+.menu{animation:slide-FRight 1.5s forwards;position:relative}
+@keyframes slide-FLeft{
+from{left:-300px;opacity:0}
+to{left:0;opacity:1}
+}
+@keyframes slide-FRight{
+from{right:-300px;opacity:0}
+to{right:0;opacity:1}
+}
