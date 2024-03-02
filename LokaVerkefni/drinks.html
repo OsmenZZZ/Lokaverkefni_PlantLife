@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/general.css">
+
+    
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="images/PlantLifeTxt.svg">
+        <div class="menu">
+            <ul class="navbar" id="menu">
+                <li><a href="index.html">Heim</a></li>
+                <li><a href="drinks.html">Drykkir</a></li>
+                <li><a href="timeAndPlace.html">Opnunartími og staðir</a></li>
+                <li><a href="About.html">Um Okkur</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+    </nav>
+
+    <article>
+        <section id="drinks">
+            <h2>Drykkir</h2>
+            <p>Dýrkun grænnefta er ekki bara drykkur, heldur lífstíll. Við bjóðum upp á fjölbreytt úrval af vöru sem mæta þínum áhugum og þörfum. Hér finnur þú ekki bara ávaxta- og grænmetisdrykkja, heldur einnig spennandi blöndur sem bjóða upp á nýjar og óvæntar upplifanir. Auk þess bjóðum við einnig upp á ríkulegt afbrigði af hressandi milkshakes og glæsilegum smoothies sem bæði henta sem hollur millimáltíð eða sem upplifun fyrir þig og vini þína.</p>
+        </section>
+
+        <section class="drinks-container">
+            <div class="drink-info">
+                <div class="image-container">
+                    <img class="change-acpect" src="images/Juice image.jpg">
+                </div>
+                <div class="name-order"><h2>Jurta</h2><a href="#Jurta" class="popup-link" data-popup-id="popup1"><h2>Panta</h2></a></div>
+                <p>Nýpressuð og uppfriskandi jurta, full af vítamínum og bragðgóðum bragði. Náttúruleg orkukick fyrir heilsusamlegt líferni.</p>
+            </div>
+
+            <div class="popup" id="popup1">
+                <span class="close">&times;</span>
+                <h2>Jurta</h2>
+                <p>Hað viltu í sleðann?</p>
+                <form>
+                    <label>Bragð</label>
+                    <div>
+                    <input type="checkbox" name="Jarðaberja">
+                    <label for="Jarðaberja">Jarðaberja</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Banana">
+                    <label for="Banana">Banana</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Gulrót">
+                    <label for="Gulrót">Gulrót</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Epla">
+                    <label for="Epla">Epla</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Special Blanda Dagsins">
+                    <label for="Special Blanda Dagsins">Special Blanda Dagsins</label>
+                    </div>
+                    <labe>Pöntunar Upplýsingar</label>
+                    <div>
+                    <input type="text" name="Heimilisfang">
+                    <label for="Heimilisfang">Heimilisfang</label>
+                    </div>
+                    <button>Staðfesta</button>
+                    <p>Borga fyrir framan</p>
+                </form>
+              </div>
+
+
+            <div class="drink-info">
+                <div class="image-container">
+                    <img class="change-acpect" src="images/Smoothie image.jpg">
+                </div>
+                <div class="name-order"><h2>Sleði</h2><a href="#Sledi" class="popup-link" data-popup-id="popup2"><h2>Panta</h2></a></div>
+                <p>Kremjaðar sleðar með ferskum ávöxtum og náttúrulegum innihaldi, býða upp á bragðgóðan nytsemi í hvert skál.</p>
+            </div>
+
+            <div class="popup" id="popup2">
+                <span class="close">&times;</span>
+                <h2>Sleði</h2>
+                <p>Hað viltu í sleðann?</p>
+                <form>
+                    <label>Bragð</label>
+                    <div>
+                    <input type="checkbox" name="Jarðaberja">
+                    <label for="Jarðaberja">Jarðaberja</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Banana">
+                    <label for="Banana">Banana</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Gulrót">
+                    <label for="Gulrót">Gulrót</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Epla">
+                    <label for="Epla">Epla</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Special Blanda Dagsins">
+                    <label for="Special Blanda Dagsins">Special Blanda Dagsins</label>
+                    </div>
+                    <labe>Pöntunar Upplýsingar</label>
+                    <div>
+                    <input type="text" name="Heimilisfang">
+                    <label for="Heimilisfang">Heimilisfang</label>
+                    </div>
+                    <button>Staðfesta</button>
+                    <p>Borga fyrir framan</p>
+                </form>
+              </div>
+
+
+            <div class="drink-info">
+                <div class="image-container">
+                    <img class="change-acpect" src="images/Milkshake image.jpg">
+                </div>
+                <div class="name-order"><h2>Mjólkurhristingur</h2><a href="#Mjolk" class="popup-link" data-popup-id="popup3"><h2>Panta</h2></a></div>
+                <p>Dásamlegir mjólkurhristingar með hágæða rjóma og ferskum ávöxtum, bjóða upp á sætar og brimbretta smáþætti.</p>
+            </div>
+
+            <div class="popup" id="popup3">
+                <span class="close">&times;</span>
+                <h2>Mjólkurhristingur</h2>
+                <p>Hað viltu í sleðann?</p>
+                <form>
+                    <label>Bragð</label>
+                    <div>
+                    <input type="checkbox" name="Jarðaberja">
+                    <label for="Jarðaberja">Jarðaberja</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Banana">
+                    <label for="Banana">Banana</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Gulrót">
+                    <label for="Gulrót">Gulrót</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Epla">
+                    <label for="Epla">Epla</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Special Blanda Dagsins">
+                    <label for="Special Blanda Dagsins">Special Blanda Dagsins</label>
+                    </div>
+                    <labe>Pöntunar Upplýsingar</label>
+                    <div>
+                    <input type="text" name="Heimilisfang">
+                    <label for="Heimilisfang">Heimilisfang</label>
+                    </div>
+                    <button>Staðfesta</button>
+                    <p>Borga fyrir framan</p>
+                </form>
+              </div>
+        </section>
+    </article>
+    <footer>
+        <div class="footer-section">
+            <h3>Hafðu Samband</h3>
+            <p>Nafn: Oskars Zelmenis</p>
+            <p>Heimilisfang: Fryggjarbrunnur 55</p>
+            <p>Netfang: zelmenis.oskars@gmail.com</p>
+            <p>Sími: 663 8520</p>
+        </div>
+        <div class="footer-section">
+            
+        </div>
+        <div class="footer-section">
+
+        </div>
+        <div class="footer-section">
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

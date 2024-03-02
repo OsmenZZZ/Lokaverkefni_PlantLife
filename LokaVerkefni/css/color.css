@@ -1,0 +1,15 @@
+h1, h2, h3, h4 {
+    color: #D4E362;
+}
+p {
+    color: #D4E362;
+}
+.box > p{
+    color: #FFD457;
+}
+body {
+    background-color: #1A3804;
+}
+footer {
+    background-color: #457D1C;
+}
